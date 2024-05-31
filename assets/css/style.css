@@ -37,6 +37,10 @@ header {
     margin: 0 0 0 10px;
 }
 
+.navbar .brand .to-home {
+    text-decoration: none;
+}
+
 .navbar .link {
     display: flex;
     text-align: center;
@@ -45,13 +49,13 @@ header {
 .link-wrapper {
     display: flex;
     justify-content: center;
-    margin: 15px 30px 0 0
+    margin: 15px 0 0 0;
 }
 
 .link-wrapper a {
     margin-bottom: 20px;
     text-decoration: none;
-    color: #454545;
+    color: #616161;
     font-size: 16px;
     font-weight: 700;
     transition: 0.2s all ease-in-out;
@@ -66,164 +70,6 @@ header {
     height: 60px;
     width: 60px;
     margin: 2px 0 0 20px;
-}
-
-.card-img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 15px 0px 0px 15px;
-}
-
-.persib {
-    border-radius: 60px;
-    margin: 50px 0px 0px 50px;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 25px 0px 0px 25px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card-body {
-    padding: 50px;
-    border-radius: 100%;
-}
-
-.card-title {
-    margin-top: 200px;
-    margin-bottom: 10px;
-    font-size: 55px;
-    text-align: left;
-    margin-left: 20px;
-    width: 35%;
-    height: 35%;
-}
-
-.card-title {
-    margin-left: 25px;
-    display: flex;
-    text-align: left;
-}
-
-.biru {
-    color: rgb(0, 106, 255);
-    margin-bottom: 90px;
-    margin-top: 165px;
-}
-
-.second {
-    margin-top: 215px;
-    width: 250%;
-    margin-left: -180px;
-}
-
-.tree {
-    margin-left: -690px;
-    margin-top: 270px;
-    width: 200%;
-    color: rgb(0, 106, 255);
-    
-
-}
-.card-text {
-    font-size: 25px;
-    color: #000;
-}
-
-.logo {
-    margin-left: 35px;
-
-}
-
-.side {
-    margin-top: 55px;
-    margin-right: 25px;
-}
-.main .wrapper {
-    width: 100%;
-    height: 200vh;
-    display: flex;
-    background-color: red;
-}
-
-.berita {
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-.berita {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 115px;
-
-}
-.berita-1 {
-    height: 170px;
-    margin-left: 35px;
-    display: flex;
-    margin-bottom: 5px;
-
-}
-
-.judul-berita-1 {
-    margin-top: 50px;
-    margin-bottom: 10px;
-    text-align: left;
-    margin-left: 65px;
-    width: 70%;
-    height: 0%;
-
-}
-
-.judul-berita-1 {
-    margin-top: 20px;
-    margin-right: 0px;
-    display: flex;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.berita-1 {
-    margin-right: 60px;
-    border-radius: 10px 0px 0px 10px;
-}
-.berita-2 {
-    height: 150px;
-    border-radius: 10px 0px 0px ;
-    margin-left: 35px;
-    margin-top: 25px;
-    margin-bottom: 5cqi;
-
-}
-.judul-berita-2 {
-    margin-top: -10px;
-    margin-left: 65px;
-}
-
-.febri {
-    height: 150px;
-    border-radius: 10px 0px 0px ;
-    margin-left: 35px;
-    margin-top: -50px;
-    margin-bottom:300px; 
-
-}
-
-.Heading {
-    margin-top: -130px;
-    margin-left: 50px;
-    font-size: 25px;
-}
-.judul-febri {
-    margin-top: -10px;
-    margin-left: 65px;
-}
-.wrapper .section1 {
-    width: 100%;
-    height: 99vh;
-    background-color: rgb(228, 235, 228);
-    display: flex;
 }
 
 .navbar .search-button {
@@ -268,10 +114,10 @@ input[type=search]:focus {
     cursor: pointer;
 }
 
-span {
-    color: rgb(0, 106, 255);
-    margin: 0;
-    padding: 0;
+.big-wrapper {
+    width: 100%;
+    height: 500vh;
+    background-color: salmon;
 }
 
 footer {
@@ -281,9 +127,9 @@ footer {
 footer .for-footer .wrap {
     display: flex;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     height: 100%;
-    background-color: salmon;
+    background-color: none;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
@@ -294,8 +140,14 @@ footer .for-footer .wrap {
     align-items: center;
 }
 
+footer .wrapper1 img {
+    width: 90px;
+}
+
 .wrapper1 p {
     font-size: 0.9em;
+    color: #ffffff;
+    font-weight: 500;
 }
 
 footer .for-footer {
@@ -310,16 +162,24 @@ footer .for-footer img {
     width: 45px;
 }
 
-.wrapper2 {
-    
-}
-
 .fa {
     padding: 15px;
     font-size: 30px;
     width: 30px;
     text-align: center;
     text-decoration: none;
+    color: #616161;
+    transition: 0.2s all ease-in-out;
+}
+
+.fa:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 1300px) {
+    .navbar .search-button {
+        display: none;
+    }
 }
 
 @media (max-width: 789px) {
@@ -327,5 +187,27 @@ footer .for-footer img {
         flex-direction: column;
     }
 
+    .link-wrapper a {
+        font-size: 12px;
+    }
+
+    .navbar .brand {
+        height: 60%;
+    }
+
+    .navbar .brand .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .wrapper1 p {
+        font-size: 0.7em;
+    }
+
+    footer .wrapper2 .fa {
+        font-size: 20px;
+        padding: 5px;
+        width: 20px;
+    }
     
 }
